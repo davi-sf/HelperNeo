@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Solicitação</title>
+  <link rel="stylesheet" href="conclusao.css">
+</head>
+<body>
+  <div class="container">
+    <img src="logo-neoenergia.png" alt="Logo" class="logo">
+    <div class="titulo">Registro de conclusão</div>
+    <form id="solicitacaoForm">
+      <div class="usuario">
+        <div class="input-box">
+          <span class="detalhes">Nome Cliente</span>
+          <input type="text" id="nomeCliente" placeholder="Insira nome do cliente">
+        </div>
+        <div class="input-box">
+          <span class="detalhes">Telefone</span>
+          <input type="text" id="telefoneCliente" placeholder="Insira o telefone do cliente">
+        </div>
+        <div class="input-box">
+          <span class="detalhes">Codigo Cliente</span>
+          <input type="text" id="codigoCliente" placeholder="Insira codigo do cliente">
+        </div>
+        <div class="input-box">
+          <span class="detalhes">Opção</span>
+          <select id="opcao">
+            <option value="ligamento">Ligamento</option>
+            <option value="desligamento">Desligamento</option>
+            <option value="2via">2 Via</option>
+          </select>
+        </div>
+        <button type="button" id="gerarTexto">Gerar Texto</button>
+        <button type="button" id="limparFormulario">Limpar</button>
+        <button type="button" id="copiarTexto">Copiar Texto</button>
+      </div>
+    </form>
+  </div>
+  <script src="conclusao.js"></script>
+</body>
+</html>
