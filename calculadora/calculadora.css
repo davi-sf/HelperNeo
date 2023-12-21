@@ -13,9 +13,10 @@ body{
 }
 
 .container .titulo{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 500;
     margin-bottom: 20px;
+    font-family: 'Source Code Pro', monospace;
     
 }
 
