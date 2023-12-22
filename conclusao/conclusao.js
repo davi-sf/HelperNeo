@@ -7,20 +7,32 @@ document.getElementById('gerarTexto').addEventListener('click', function() {
 
   switch (opcao) {
     case 'ligamento':
-      texto = `O (a) cliente ${nome} do telefone ${telefone} e CC ${codigo} solicitou ligamento definitivo de sua UC.`;
+      texto = `O(a) cliente ${nome}, do telefone ${telefone} e código de cliente ${codigo}, solicitou o ligamento de sua UC.`;
       break;
+    case 'notLigamento':
+      texto = `Sr(Sra) ${nome}, de telefone ${telefone}, solicitou uma ligação nova, mas não possui vínculo com a empresa e, portanto, a solicitação não pôde ser concluída.`;
+      break;  
     case 'desligamento':
-      texto = `O (a) cliente ${nome} do telefone ${telefone} e CC ${codigo} solicitou desligamento definitivo de sua UC.`;
+      texto = `O(a) cliente ${nome}, do telefone ${telefone} e código de cliente ${codigo}, solicitou o desligamento definitivo de sua UC.`;
       break;
     case 'TT':
-      texto = `O (a) cliente ${nome} do telefone ${telefone} e CC ${codigo} solicitou a troca de titularidade e esta foi realizada.`;
+      texto = `O(a) cliente ${nome}, do telefone ${telefone} e código de cliente ${codigo}, solicitou a troca de titularidade e esta foi realizada.`;
       break;
-      case 'TTNDRCA':
-      texto = `O (a) cliente ${nome}, do telefone ${telefone} e CC ${codigo} solicitou a troca de titularidade, porém não foi realizada devido a débitos em aberto.`;
+    case 'LuzLocal':
+      texto = `O(a) cliente ${nome}, do telefone ${telefone} e código de cliente ${codigo}, entrou em contato relatando falta de luz em sua residência. Foi aberta uma solicitação.`;
       break;
-      case '2via':
-        texto = `O (a) cliente ${nome} do telefone ${telefone} e CC ${codigo} solicitou a verbalização da 2ª via da fatura.`;
-        break;
+    case 'LuzGeral':
+      texto = `O(a) cliente ${nome}, do telefone ${telefone} e código de cliente ${codigo}, relatou falta de luz geral. Foi aberta uma solicitação.`;
+      break;
+    case 'Religacao':
+      texto = `O(a) cliente ${nome}, do telefone ${telefone} e código de cliente ${codigo}, solicitou a religação em sua residência. Não possui débitos em aberto.`;
+      break;
+    case 'TTNDRCA':
+      texto = `O(a) cliente ${nome}, do telefone ${telefone} e código de cliente ${codigo}, solicitou a troca de titularidade, mas não foi realizada devido a débitos em aberto.`;
+      break;
+    case '2via':
+      texto = `O(a) cliente ${nome}, do telefone ${telefone} e código de cliente ${codigo}, solicitou a segunda via da fatura.`;
+      break;
     default:
       texto = 'Selecione uma opção válida.';
   }
