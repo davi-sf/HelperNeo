@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon-neo.png" type="image/png">
+  <title>Atendimento Neo BSB</title>
+  <link rel="stylesheet" href="location.css">
+</head>
+<body>
+
+  <div class="container">
+    <img src="logo-neoenergia.png" alt="Logo" class="logo">
+    <h1>Região do cliente</h1>
+    <select id="regioes" onchange="showRecommendation()">
+      <option value="">Selecione uma cidade</option>
+      <option value="Plano Piloto">Plano Piloto</option>
+      <option value="Riacho Fundo">Riacho Fundo</option>
+      <option value="Sobradinho">Sobradinho</option>
+      <option value="Sobradinho II">Sobradinho II</option>
+      <option value="Taguatinga">Taguatinga</option>
+      <option value="Cruzeiro">Cruzeiro</option>
+      <option value="Brazlândia">Brazlândia</option>
+      <option value="Jardim Botânico">Jardim Botânico</option>
+      <option value="Candangolândia">Candangolândia</option>
+      <option value="Fercal">Fercal</option>
+      <option value="Arniqueira">Arniqueira</option>
+      <option value="Itapoã">Itapoã</option>
+      <option value="Guará">Guará</option>
+      <option value="Recanto">Recanto das Emas</option>
+      <option value="Sia">Sia</option>
+      <option value="Varjão">Varjão</option>
+      <option value="Arniqueira">Arniqueira</option>
+      <option value="Fercal">Fercal</option>
+      <option value="Arniqueira">Arniqueira</option>
+      <option value="Fercal">Fercal</option>
+      <option value="Arniqueira">Arniqueira</option>
+    </select>
+  </div>
+
+  <dialog id="recommendationDialog">
+    <p id="recommendationText"></p>
+    <button onclick="goBack()">Voltar</button>
+    <button onclick="closeDialog()">Fechar</button>
+  </dialog>
+
+  <script src="location.js"></script>
+</body>
+</html>

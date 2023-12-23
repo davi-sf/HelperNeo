@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(163, 197, 224);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 700px;
+  width: 100;
+  background-color: #FFF;
+  padding: 25px 30px;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 5px;
+
+}
+
+dialog {
+  width: 300px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  /* Centralizando o dialog */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Estilize o botão dentro do dialog */
+dialog button {
+  background-color: grey;
+  cursor: pointer;
+  top: 10px;
+  border-radius: 3px;
+  position: relative;
+}
+
+/* Quando o botão estiver focado */
+dialog button:hover {
+  opacity: 0.7;
+  background-color: lightseagreen;
+}
+
+.logo {
+  width: 80px; 
+  margin-bottom: 10px;
+}
+
+  
