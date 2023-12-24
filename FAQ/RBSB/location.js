@@ -17,7 +17,7 @@ function showRecommendation() {
         recomendacao = 'AG Paranoá - Quadra 03, Área Especial 07, Paranoá';
         break;
       case 'Taguatinga':
-        recomendacao = 'AG Samambaia';
+        recomendacao = 'AG Samambaia - QN 406 Conjunto F, Samambaia Norte, Samambaia';
         break;
       case 'Cruzeiro':
         recomendacao = 'AG Lago Sul - SHIS QI 21, Lago Sul';

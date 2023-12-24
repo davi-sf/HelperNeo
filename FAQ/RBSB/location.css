@@ -26,10 +26,11 @@ body {
 }
 
 .container h1 {
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   position: relative;
   bottom: 5px;
+  font-family: 'PT Sans', sans-serif;
 
 }
 
@@ -41,18 +42,18 @@ dialog {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
-  /* Centralizando o dialog */
+
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-family: 'Roboto', sans-serif;
 }
 
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Estilize o botão dentro do dialog */
 dialog button {
   background-color: grey;
   cursor: pointer;
@@ -61,7 +62,6 @@ dialog button {
   position: relative;
 }
 
-/* Quando o botão estiver focado */
 dialog button:hover {
   opacity: 0.7;
   background-color: lightseagreen;
@@ -71,5 +71,8 @@ dialog button:hover {
   width: 80px; 
   margin-bottom: 10px;
 }
+
+
+
 
   
